@@ -22,15 +22,17 @@ export const ContactUs = () => {
   };
 
   return (
-    <form ref={form} className="mail_card mx-auto" onSubmit={sendEmail}>
-      <label>Name</label>
-      <input className=" mb-6" type="text" name="name" />
-      <label>Email</label>
-      <input className=" mb-6" type="email" name="username" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input className="btn" type="submit" value="Send" />
-    </form>
+    <div className="Mail_card">
+      <form ref={form} className="mail_card mx-auto" onSubmit={sendEmail}>
+        <label>Name</label>
+        <input className=" mb-6" type="text" name="name" />
+        <label>Email</label>
+        <input className=" mb-6" type="email" name="username" />
+        <label>Message</label>
+        <textarea name="message" />
+        <input className="btn" type="submit" value="Send" />
+      </form>
+    </div>
   );
 };
 
