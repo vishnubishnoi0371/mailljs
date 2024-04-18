@@ -2,23 +2,38 @@ form {
   display: flex;
   flex-direction: column;
 }
-.btn {
-  max-width: 70px !important;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-top: 20px;
-}
+
 input,
 textarea {
-  max-width: 200px !important;
+  max-width: 300px !important;
   resize: none;
   height: 40px !important;
+  border: 2px solid black !important;
+  outline: none !important;
 }
 .Mail_card {
   max-width: 300px !important;
   margin-left: auto;
   margin-right: auto;
 }
+.btn {
+  background: #000;
+  color: white;
+}
+.mail_card {
+  padding: 15px;
+  width: 250px;
+  border: 2px solid black;
+}
 
+.mb-6 {
+  margin-bottom: 20px;
+}
+
+.cntr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}

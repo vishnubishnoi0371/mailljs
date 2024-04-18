@@ -30,7 +30,7 @@ export const Mailref = () => {
   };
 
   return (
-    <div className=" min-h-screen flex justify-center items-center flex-col ">
+    <div className=" cntr min-h-screen flex justify-center items-center flex-col ">
       <div className="max-w-[320px] p-5 border-[2px] border-black">
         <form className="mail_card mx-auto" onSubmit={sendEmail}>
           <label>Name</label>
@@ -52,7 +52,7 @@ export const Mailref = () => {
           <label>Message</label>
           <textarea className="border-[2px] mb-6 border-black" name="message" />
           <input
-            className=" border-[2px] border-black text-white bg-black"
+            className=" border-[2px] btn border-black text-white bg-black"
             type="submit"
             value="Send"
           />
