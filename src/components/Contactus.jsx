@@ -22,15 +22,31 @@ export const ContactUs = () => {
   };
 
   return (
-    <div className="Mail_card">
-      <form ref={form} className="mail_card mx-auto" onSubmit={sendEmail}>
+    <div className="">
+      <form
+        ref={form}
+        className="max-w-[320px] p-5 border-[2px] border-black"
+        onSubmit={sendEmail}
+      >
         <label>Name</label>
-        <input className=" mb-6" type="text" name="name" />
+        <input
+          className=" mb-6 border-[2px] border-black"
+          type="text"
+          name="name"
+        />
         <label>Email</label>
-        <input className=" mb-6" type="email" name="username" />
+        <input
+          className=" mb-6 border-[2px] border-black"
+          type="email"
+          name="username"
+        />
         <label>Message</label>
-        <textarea name="message" />
-        <input className="btn" type="submit" value="Send" />
+        <textarea className="border-[2px] border-black" name="message" />
+        <input
+          className="btn w-full text-white bg-black"
+          type="submit"
+          value="Send"
+        />
       </form>
     </div>
   );

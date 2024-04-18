@@ -8,7 +8,6 @@ form {
   padding-right: 15px;
   padding-top: 8px;
   padding-bottom: 8px;
-
   margin-top: 20px;
 }
 input,
@@ -22,12 +21,4 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
-.mail_card {
-  padding: 30px;
-  border: 2px solid black;
-  width: 220px;
-  max-width: 100%;
-}
-.mb-6 {
-  margin-bottom: 24px;
-}
+

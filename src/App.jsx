@@ -1,11 +1,13 @@
-import './App.css'
-import { ContactUs } from './components/Contactus'
+import "./App.css";
+import { ContactUs } from "./components/Contactus";
+import Mailref from "./components/Mailref";
 
 function App() {
   return (
     <>
-     <ContactUs/>
+      {/* <ContactUs/> */}
+      <Mailref />
     </>
-  )
+  );
 }
-export default App
+export default App;
