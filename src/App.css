@@ -28,6 +28,7 @@ textarea {
   color: white;
 }
 .alert_mail {
+  margin-top: -10px !important;
   color: red !important;
 }
 .mt-0 {

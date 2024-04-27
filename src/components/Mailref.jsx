@@ -38,16 +38,17 @@ export const Mailref = () => {
     };
 
     emailjs
-      .sendForm("service_3vjr5hg", "template_k8k39cs", e.target, {
+      .sendForm("service_yej7ik5", "template_k8k39cs", e.target, {
         publicKey: "i46m5s1cZf6tzqpJP",
       })
       .then(
         () => {
           console.log("SUCCESS!");
           setShowPopup(true);
-          setName("");
-          setEmail("");
-          setMessage("");
+          setName(""); // Reset name input
+          setEmail(""); // Reset email input
+          setMessage(""); // Reset message input
+          setErrors({}); // Reset errors object
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -68,7 +69,7 @@ export const Mailref = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          {errors.name && <p className="text-red-500">{errors.name}</p>}
+          {errors.name && <p className="alert_mail">{errors.name}</p>}
           <label>Email</label>
           <input
             className="mb-6 border-[2px] border-black"
@@ -77,7 +78,7 @@ export const Mailref = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          {errors.email && <p className="text-red-500">{errors.email}</p>}
+          {errors.email && <p className="alert_mail">{errors.email}</p>}
           <label>Message</label>
           <textarea
             className="border-[2px] mb-6 border-black"
@@ -85,7 +86,7 @@ export const Mailref = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
-          {errors.message && <p className="text-red-500">{errors.message}</p>}
+          {errors.message && <p className="alert_mail">{errors.message}</p>}
           <input
             className="border-[2px] btn border-black text-white bg-black"
             type="submit"
